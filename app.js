@@ -16,22 +16,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const defaultWatermark = 'ENGINEER';
 
-  /* Live Hero Portrait Switcher */
+  /* Live Hero Portrait Switcher (if present) */
   const portraitOptBtns = document.querySelectorAll('.portrait-opt-btn');
-  portraitOptBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      portraitOptBtns.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-      const newSrc = btn.getAttribute('data-portrait-src');
-      if (portraitImg && newSrc) {
-        portraitImg.style.opacity = '0.3';
-        setTimeout(() => {
-          portraitImg.src = newSrc;
-          portraitImg.style.opacity = '1';
-        }, 120);
-      }
+  if (portraitOptBtns.length > 0) {
+    portraitOptBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        portraitOptBtns.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const newSrc = btn.getAttribute('data-portrait-src');
+        if (portraitImg && newSrc) {
+          portraitImg.style.opacity = '0.3';
+          setTimeout(() => {
+            portraitImg.src = newSrc;
+            portraitImg.style.opacity = '1';
+          }, 120);
+        }
+      });
     });
-  });
+  }
 
   function filterProjectsByTrack(filterKey) {
     filterBtns.forEach((b) => {
