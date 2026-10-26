@@ -114,15 +114,17 @@
       this.rootGroup.position.set(12, -34, 0);
       this.scene.add(this.rootGroup);
 
-      // Camera framed with generous top & bottom clearance so full fingertips and forearm base are always visible
-      this.camera = new THREE.PerspectiveCamera(40, width / height, 1, 2000);
-      this.camera.position.set(-22, 6, 560);
+      // Camera framed with generous top, bottom & mobile horizontal clearance
+      const initAspect = width / height;
+      const initDistScale = initAspect < 1.12 ? Math.min(1.46, 1.12 / Math.max(0.62, initAspect)) : 1.0;
+      this.camera = new THREE.PerspectiveCamera(40, initAspect, 1, 2200);
+      this.camera.position.set(-22, 6, Math.round(560 * initDistScale));
 
       this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
       this.controls.enableDamping = true;
       this.controls.dampingFactor = 0.08;
       this.controls.minDistance = 180;
-      this.controls.maxDistance = 850;
+      this.controls.maxDistance = 980;
       this.controls.target.set(-4, -2, 0);
       this.controls.maxPolarAngle = Math.PI * 0.85;
 
@@ -168,7 +170,10 @@
       const rect = this.container.getBoundingClientRect();
       const width = rect.width || 640;
       const height = rect.height || 480;
-      this.camera.aspect = width / height;
+      const aspect = width / height;
+      this.camera.aspect = aspect;
+      const distScale = aspect < 1.12 ? Math.min(1.46, 1.12 / Math.max(0.62, aspect)) : 1.0;
+      this.camera.position.z = Math.round(560 * distScale);
       this.camera.updateProjectionMatrix();
       this.renderer.setSize(width, height);
     }
@@ -791,6 +796,7 @@
           badge: 'MCU',
           badgeColor: '#2563EB',
           text: 'Arduino Nano Controller',
+          mobileText: 'Arduino Nano',
           side: 'left',
           offsetX: -125,
           offsetY: -36,
@@ -801,6 +807,7 @@
           badge: 'EEG PCB',
           badgeColor: '#10B981',
           text: 'Neural Amp v0.1 (TL074)',
+          mobileText: 'Neural Amp v0.1',
           side: 'left',
           offsetX: -125,
           offsetY: 16,
@@ -811,6 +818,7 @@
           badge: '5× SERVOS',
           badgeColor: '#0EA5E9',
           text: '9g Micro Servos (1/Finger)',
+          mobileText: '5× 9g Servos',
           side: 'bottom',
           offsetX: 12,
           offsetY: 44,
@@ -821,6 +829,7 @@
           badge: 'PLA + OLED',
           badgeColor: '#E85D2A',
           text: 'Side Panel + 0.96" OLED',
+          mobileText: 'OLED Side Panel',
           side: 'right',
           offsetX: 95,
           offsetY: -54,
@@ -884,6 +893,9 @@
         this.calloutOverlay.appendChild(el);
         this.calloutEls.push({
           el,
+          lbl,
+          text: p.text,
+          mobileText: p.mobileText || p.text,
           line,
           dot,
           side: p.side,
@@ -900,18 +912,27 @@
       const rect = this.container.getBoundingClientRect();
       const w = rect.width || 640;
       const h = rect.height || 480;
+      const isCompact = w < 540;
+      const hMargin = isCompact ? 62 : 108;
+      const xScale = isCompact ? 0.56 : 1.0;
       const alpha = String(Math.min(1, (this.explodeProgress - 0.2) * 2.2));
 
       // Project all 3D target anchor points first
       const computed = this.calloutEls.map(item => {
+        if (item.lbl) {
+          item.lbl.textContent = isCompact ? item.mobileText : item.text;
+        }
+        item.el.style.fontSize = isCompact ? '8.5px' : '10px';
+        item.el.style.padding = isCompact ? '3px 7px' : '4px 10px';
+
         const localPos = item.getPos();
         const worldPos = localPos.clone().applyMatrix4(this.rootGroup.matrixWorld);
         worldPos.project(this.camera);
         const tx = (worldPos.x * 0.5 + 0.5) * w;
         const ty = (-worldPos.y * 0.5 + 0.5) * h;
 
-        let lx = Math.max(108, Math.min(w - 108, tx + item.offsetX));
-        let ly = Math.max(32, Math.min(h - 68, ty + item.offsetY));
+        let lx = Math.max(hMargin, Math.min(w - hMargin, tx + item.offsetX * xScale));
+        let ly = Math.max(28, Math.min(h - 64, ty + item.offsetY));
         return { item, worldZ: worldPos.z, tx, ty, lx, ly };
       });
 
