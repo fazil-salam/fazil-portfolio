@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul Fazil Abdul Salam — Embedded Systems, 3D Printing Prototyping & Robotics Portfolio</title>
+  <meta name="description" content="Portfolio of Abdul Fazil Abdul Salam — MEng ECE graduate (GPA 9.2/10), Founder of Femto 3D (200+ prototypes for 50+ clients), and Embedded Systems, Robotics & 3D Printing Engineer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Subtle Precision Engineering Grid Overlay -->
+  <div class="ambient-grid" aria-hidden="true"></div>
+
+  <!-- Top Minimal Navigation (Matches Reference Layout) -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="brand" aria-label="Abdul Fazil Home">
+        <span class="brand-name">Fazil.</span>
+        <span class="brand-dot" title="Windsor, ON • Open Work Permit (Canada)"></span>
+        <span class="brand-sub">MEng ECE</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="#work" class="nav-link">Projects (9)</a>
+        <a href="#lab" class="nav-link">3D × PCB Breakdown</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education &amp; Awards</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://github.com/fazil-salam" target="_blank" rel="noopener noreferrer" class="header-icon-link" title="GitHub: github.com/fazil-salam">GitHub ↗</a>
+        <a href="#contact" class="btn-contact-pill">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION (Reference Layout in Full Color + 100% True Credentials)
+         ========================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Subtle Interactive SVG PCB Traces + 3D Print Toolpath Lines behind pills -->
+      <svg class="hero-circuit-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <!-- Left 3D Printing / CAD / Robotics Traces -->
+        <path class="trace-line trace-left-1" d="M 410 215 L 520 215 L 565 265 L 640 265" />
+        <path class="trace-line trace-left-2" d="M 370 335 L 490 335 L 535 370 L 620 370" />
+        <path class="trace-line trace-left-3" d="M 405 455 L 515 455 L 555 430 L 635 430" />
+        <!-- Right Embedded / PCB / IoT Copper Traces -->
+        <path class="trace-line trace-right-1" d="M 1030 215 L 920 215 L 875 265 L 800 265" />
+        <path class="trace-line trace-right-2" d="M 1070 335 L 950 335 L 905 370 L 820 370" />
+        <path class="trace-line trace-right-3" d="M 1035 455 L 925 455 L 885 430 L 805 430" />
+
+        <!-- Solder Pads / Nodes -->
+        <circle class="trace-pad" cx="565" cy="265" r="3.5" />
+        <circle class="trace-pad" cx="535" cy="370" r="3.5" />
+        <circle class="trace-pad" cx="555" cy="430" r="3.5" />
+        <circle class="trace-pad" cx="875" cy="265" r="3.5" />
+        <circle class="trace-pad" cx="905" cy="370" r="3.5" />
+        <circle class="trace-pad" cx="885" cy="430" r="3.5" />
+      </svg>
+
+      <!-- Real Corner Credentials Readout -->
+      <div class="hero-telemetry hero-telemetry-left">
+        <span class="telemetry-tag"><span class="dot-orange"></span> FEMTO 3D FOUNDER: 200+ PROJECTS • 50+ CLIENTS</span>
+      </div>
+
+      <!-- Live Hero Portrait Switcher so Abdul can pick his favorite headshot anytime -->
+      <div class="hero-portrait-switcher" role="tablist" aria-label="Choose Hero Portrait">
+        <span class="switcher-label">PORTRAIT:</span>
+        <button type="button" class="portrait-opt-btn active" data-portrait-src="assets/portrait-real-suit-cutout.png">Formal Suit</button>
+        <button type="button" class="portrait-opt-btn" data-portrait-src="assets/portrait-actual-hero-cutout.png">Studio Headshot</button>
+        <button type="button" class="portrait-opt-btn" data-portrait-src="assets/portrait-v2-cutout.png">Alternative Cutout</button>
+      </div>
+
+      <div class="hero-telemetry hero-telemetry-right">
+        <span class="telemetry-tag"><span class="dot-emerald"></span> MEng ECE • UWINDSOR (GPA 9.2/10) • WINDSOR, ON</span>
+      </div>
+
+      <div class="hero-stage">
+        <!-- LAYER 1: Floating Skill Pills Around Portrait (100% Real Skills from Resume) -->
+        <div class="hero-pills-layer">
+          <!-- Left Column: 3D Printing, CAD & Robotics -->
+          <button class="skill-pill pill-left-top" data-watermark="PROTOTYPER" data-domain="3d" data-filter-jump="3d" type="button">
+            <span class="pill-indicator pill-orange"></span>
+            Fusion 360 &amp; FDM/SLA
+          </button>
+          <button class="skill-pill pill-left-mid" data-watermark="FEMTO 3D" data-domain="3d" data-filter-jump="3d" type="button">
+            <span class="pill-indicator pill-orange"></span>
+            200+ Client Prototypes
+          </button>
+          <button class="skill-pill pill-left-bot" data-watermark="ROBOTICS" data-domain="3d" data-filter-jump="robotics" type="button">
+            <span class="pill-indicator pill-orange"></span>
+            Robotics &amp; LQG Control
+          </button>
+
+          <!-- Right Column: Embedded Systems, Custom PCB & IoT -->
+          <button class="skill-pill pill-right-top" data-watermark="EMBEDDED" data-domain="embedded" data-filter-jump="embedded" type="button">
+            <span class="pill-indicator pill-emerald"></span>
+            Embedded C • ESP32 &amp; Arduino
+          </button>
+          <button class="skill-pill pill-right-mid" data-watermark="PCB DESIGN" data-domain="embedded" data-filter-jump="embedded" type="button">
+            <span class="pill-indicator pill-emerald"></span>
+            Eagle PCB &amp; Analog Filters
+          </button>
+          <button class="skill-pill pill-right-bot" data-watermark="IOT & CLOUD" data-domain="embedded" data-filter-jump="iot" type="button">
+            <span class="pill-indicator pill-emerald"></span>
+            MQTT IoT &amp; Cloud Telemetry
+          </button>
+        </div>
+
+        <!-- LAYER 2: Giant Background Role Typography (Behind Portrait) -->
+        <div class="hero-backdrop-text-wrap" aria-hidden="true">
+          <div class="hero-backdrop-word" id="heroBackdropWord">ENGINEER</div>
+        </div>
+
+        <!-- LAYER 3: Centered Studio Color Portrait Cutout -->
+        <div class="hero-portrait-container">
+          <img
+            id="heroPortraitImg"
+            src="assets/portrait-real-suit-cutout.png"
+            onerror="this.onerror=null; this.src='assets/portrait-actual-hero-cutout.png';"
+            alt="Abdul Fazil Abdul Salam — Embedded Systems &amp; 3D Prototyping Engineer"
+            class="hero-portrait-img"
+          />
+        </div>
+
+        <!-- LAYER 4: Foreground Tilted Callout Badges + Giant Gradient Name -->
+        <div class="hero-foreground-title">
+          <div class="hero-badges-row">
+            <div class="floating-speech-badge badge-hello">
+              Hello, my name is
+            </div>
+            <a href="https://www.linkedin.com/in/connectfazil" target="_blank" rel="noopener noreferrer" class="floating-speech-badge badge-work">
+              Let's work together! <span class="badge-arrow">↗</span>
+            </a>
+          </div>
+          <h1 class="hero-main-name">Abdul Fazil</h1>
+        </div>
+      </div>
+
+      <!-- Verified Career Highlights Bar -->
+      <div class="hero-metrics-strip">
+        <div class="metric-Tile">
+          <span class="metric-num accent-3d">200+</span>
+          <span class="metric-desc">Prototypes delivered for <strong>50+ clients</strong> as Founder of <strong>Femto 3D</strong></span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-Tile">
+          <span class="metric-num accent-pcb">₹1,00,000</span>
+          <span class="metric-desc"><strong>TNSI 2022 National Award Winner</strong> for BCI-Controlled Bionic Arm</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-Tile">
+          <span class="metric-num">9.2 / 10</span>
+          <span class="metric-desc"><strong>MEng ECE GPA</strong> at University of Windsor (BEng CGPA 8.7/10 Distinction)</span>
+        </div>
+        <div class="metric-divider"></div>
+        <div class="metric-Tile">
+          <span class="metric-num accent-pcb">59%</span>
+          <span class="metric-desc"><strong>Lower Tracking RMSE</strong> via 100 Hz LQG Kalman Controller (200-run Monte Carlo)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         INTERACTIVE LAB: ANATOMY OF THE TNSI-WINNING BCI BIONIC ARM
+         (100% True Breakdown of His Flagship Build)
+         ========================================== -->
+    <section class="lab-section section-container" id="lab">
+      <div class="section-header">
+        <div class="eyebrow-badge">
+          <span class="eyebrow-dot"></span> INTERACTIVE FLAGSHIP SYSTEM BREAKDOWN
+        </div>
+        <h2 class="section-title">How <span class="accent-3d">3D Printing</span> &amp; <span class="accent-pcb">Embedded Hardware</span> Come Together.</h2>
+        <p class="section-subtitle">
+          Explore the actual architecture behind my <strong>TNSI 2022 National Award-Winning BCI-Controlled Bionic Arm</strong> and <strong>Femto 3D</strong> builds—combining <strong>Autodesk Fusion 360 3D printing</strong>, a custom <strong>Autodesk Eagle TL074 bio-potential PCB</strong>, and <strong>Embedded C + Python/TensorFlow</strong> control.
+        </p>
+      </div>
+
+      <div class="interactive-stack-card">
+        <!-- Left Controls: Actual Bionic Arm Studio Showcase & Gesture Switcher -->
+        <div class="stack-controls">
+          <div class="bionic-live-preview-card">
+            <div class="bionic-preview-header">
+              <span class="mono-label">ACTUAL 3D-PRINTED PROTOTYPE</span>
+              <div class="bionic-lab-tabs">
+                <button type="button" class="bionic-lab-tab active" data-lab-img="assets/bionic-arm-studio-open.jpg">
+                  "Bionic Arm" (Open)
+                </button>
+                <button type="button" class="bionic-lab-tab" data-lab-img="assets/bionic-arm-studio-peace.jpg">
+                  "Peace" Gesture ✌️
+                </button>
+              </div>
+            </div>
+            <div class="bionic-preview-img-box">
+              <img id="bionicLabPreviewImg" src="assets/bionic-arm-studio-open.jpg" alt="Abdul Fazil's 3D-printed BCI Bionic Arm" />
+            </div>
+          </div>
+
+          <div class="slider-control-box">
+            <div class="slider-label-row">
+              <label for="explodeSlider" class="mono-label">SIDE PANEL &amp; INTERNAL ELECTRONICS DRAWER</label>
+              <span id="explodeValueLabel" class="mono-value">SIDE EXPLODED (85%)</span>
+            </div>
+            <input type="range" id="explodeSlider" min="0" max="100" value="85" class="tactile-slider" />
+            <div class="slider-ticks">
+              <span>Closed Panel</span>
+              <span>Panel Open</span>
+              <span>Side Exploded</span>
+            </div>
+          </div>
+
+          <div class="layer-selector-list" role="tablist" aria-label="Bionic Arm & Prototyping Layers">
+            <button class="layer-btn active" data-layer="all" type="button">
+              <span class="layer-num">ALL</span>
+              <div class="layer-info">
+                <strong>Complete Electromechanical System</strong>
+                <span>Fusion 360 PLA Arm + TL074 Custom PCB + Arduino/TensorFlow</span>
+              </div>
+            </button>
+
+            <button class="layer-btn" data-layer="shell" type="button">
+              <span class="layer-num layer-num-orange">01</span>
+              <div class="layer-info">
+                <strong>3D-Printed Mechanical Prosthetic (Fusion 360)</strong>
+                <span>7 CAD Iterations • 1.4–1.5 kg PLA Print • GD&amp;T Calibrated</span>
+              </div>
+            </button>
+
+            <button class="layer-btn" data-layer="pcb" type="button">
+              <span class="layer-num layer-num-emerald">02</span>
+              <div class="layer-info">
+                <strong>Custom 2-Layer TL074 Amplifier PCB (Eagle)</strong>
+                <span>µV-to-mV EEG/EMG Gain • 20–500 Hz Bandpass • 50/60 Hz Notch</span>
+              </div>
+            </button>
+
+            <button class="layer-btn" data-layer="firmware" type="button">
+              <span class="layer-num layer-num-dark">03</span>
+              <div class="layer-info">
+                <strong>Embedded C Servo Firmware &amp; Dual Safety Gate</strong>
+                <span>Arduino Finger Control • 10 Gestures • EEG + TensorFlow Gate</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Interactive 3D Isometric Visualizer Canvas -->
+        <div class="stack-visualizer-stage">
+          <div class="visualizer-topbar">
+            <div class="vis-status">
+              <span class="pulse-dot"></span>
+              <span id="visLayerTitle" class="mono-label">SYSTEM: BCI BIONIC ARM + TL074 BIO-AMP STACK</span>
+            </div>
+            <div class="vis-actions">
+              <button class="vis-mini-btn" id="toggleWireframeBtn" type="button">CAD Wireframe: OFF</button>
+              <button class="vis-mini-btn" id="simulatePulseBtn" type="button">Test EEG + Camera Gate ⚡</button>
+            </div>
+          </div>
+
+          <!-- Interactive 3D Model & Isometric SVG Stack -->
+          <div class="iso-stack-viewport" id="isoViewport">
+            <!-- 3D Interactive Telemetry Hint Badge -->
+            <div class="canvas-3d-hint" id="canvas3dHint">
+              <span class="hint-dot"></span> 3D CAD: Drag to Rotate • Scroll to Zoom • Slider Opens Side Panel &amp; Electronics
+            </div>
+
+            <!-- Top Layer: Fusion 360 3D-Printed Prosthetic Housing -->
+            <div class="iso-layer iso-layer-top" id="isoLayerTop">
+              <div class="iso-callout callout-top">
+                <span class="callout-badge badge-3d">FUSION 360 + PLA</span>
+                <span>7 Iterations • 1.4–1.5 kg Total Weight • 10 Finger Gestures</span>
+              </div>
+              <svg viewBox="0 0 500 220" class="iso-svg">
+                <polygon points="250,20 440,95 250,170 60,95" fill="#2A2A28" stroke="#E85D2A" stroke-width="2" />
+                <polygon points="60,95 250,170 250,200 60,125" fill="#1D1D1B" stroke="#E85D2A" stroke-width="1.5" />
+                <polygon points="440,95 250,170 250,200 440,125" fill="#353532" stroke="#E85D2A" stroke-width="1.5" />
+                <polygon points="250,36 410,95 250,154 90,95" fill="none" stroke="#E85D2A" stroke-width="1" stroke-dasharray="6 4" opacity="0.75" />
+                <line x1="280" y1="65" x2="345" y2="90" stroke="#141413" stroke-width="5" stroke-linecap="round" />
+                <line x1="265" y1="75" x2="330" y2="100" stroke="#141413" stroke-width="5" stroke-linecap="round" />
+                <line x1="250" y1="85" x2="315" y2="110" stroke="#141413" stroke-width="5" stroke-linecap="round" />
+                <ellipse cx="250" cy="38" rx="8" ry="4" fill="#D49B35" stroke="#FFF" stroke-width="0.8" />
+                <ellipse cx="405" cy="95" rx="8" ry="4" fill="#D49B35" stroke="#FFF" stroke-width="0.8" />
+                <ellipse cx="250" cy="152" rx="8" ry="4" fill="#D49B35" stroke="#FFF" stroke-width="0.8" />
+                <ellipse cx="95" cy="95" rx="8" ry="4" fill="#D49B35" stroke="#FFF" stroke-width="0.8" />
+              </svg>
+            </div>
+
+            <!-- Middle Layer: Custom 2-Layer Autodesk Eagle TL074 Bio-Potential Amplifier PCB -->
+            <div class="iso-layer iso-layer-mid" id="isoLayerMid">
+              <div class="iso-callout callout-mid">
+                <span class="callout-badge badge-pcb">EAGLE 2-LAYER PCB</span>
+                <span>TL074 Op-Amp • 20–500 Hz Bandpass • 50/60 Hz Rejection</span>
+              </div>
+              <svg viewBox="0 0 500 220" class="iso-svg">
+                <polygon points="250,30 425,95 250,160 75,95" fill="#14261D" stroke="#1E8E5E" stroke-width="2" />
+                <polygon points="75,95 250,160 250,168 75,103" fill="#0D1913" stroke="#1E8E5E" stroke-width="1" />
+                <polygon points="425,95 250,160 250,168 425,103" fill="#1B3529" stroke="#1E8E5E" stroke-width="1" />
+                <polyline class="pcb-signal-path" points="250,95 190,72 150,85" fill="none" stroke="#34D399" stroke-width="2.2" />
+                <polyline class="pcb-signal-path" points="250,95 310,75 355,92" fill="none" stroke="#34D399" stroke-width="2.2" />
+                <polyline class="pcb-signal-path" points="250,95 220,122 175,112" fill="none" stroke="#F59E0B" stroke-width="2" />
+                <polyline class="pcb-signal-path" points="250,95 290,118 330,110" fill="none" stroke="#34D399" stroke-width="2" />
+                <polygon points="250,74 285,88 250,102 215,88" fill="#1F2421" stroke="#D49B35" stroke-width="1.5" />
+                <text x="250" y="91" text-anchor="middle" fill="#E5E7EB" font-size="7" font-family="JetBrains Mono">TL074</text>
+                <polygon points="115,108 148,120 135,130 102,118" fill="#9CA3AF" stroke="#E5E7EB" stroke-width="1" />
+                <ellipse cx="250" cy="44" rx="7" ry="3.5" fill="none" stroke="#D49B35" stroke-width="2.5" />
+                <ellipse cx="395" cy="95" rx="7" ry="3.5" fill="none" stroke="#D49B35" stroke-width="2.5" />
+                <ellipse cx="250" cy="146" rx="7" ry="3.5" fill="none" stroke="#D49B35" stroke-width="2.5" />
+                <ellipse cx="105" cy="95" rx="7" ry="3.5" fill="none" stroke="#D49B35" stroke-width="2.5" />
+                <circle class="led-indicator" cx="190" cy="72" r="4" fill="#34D399" />
+                <circle class="led-indicator led-orange" cx="310" cy="75" r="4" fill="#E85D2A" />
+              </svg>
+            </div>
+
+            <!-- Bottom Layer: Arduino Servo Control & Dual-Check Safety Gate -->
+            <div class="iso-layer iso-layer-bot" id="isoLayerBot">
+              <div class="iso-callout callout-bot">
+                <span class="callout-badge badge-firmware">ARDUINO + TENSORFLOW</span>
+                <span>Embedded C PWM Servos • ~50 Validation Trials</span>
+              </div>
+              <svg viewBox="0 0 500 220" class="iso-svg">
+                <polygon points="250,25 440,95 250,165 60,95" fill="#DCDAD3" stroke="#8C8A82" stroke-width="2" />
+                <polygon points="60,95 250,165 250,198 60,128" fill="#C4C2BA" stroke="#8C8A82" stroke-width="1.5" />
+                <polygon points="440,95 250,165 250,198 440,128" fill="#CFCDC5" stroke="#8C8A82" stroke-width="1.5" />
+                <line x1="155" y1="60" x2="345" y2="130" stroke="#9E9C94" stroke-width="1.5" stroke-dasharray="4 4" />
+                <line x1="345" y1="60" x2="155" y2="130" stroke="#9E9C94" stroke-width="1.5" stroke-dasharray="4 4" />
+                <polygon points="250,45 390,95 250,145 110,95" fill="none" stroke="#7A7870" stroke-width="1.2" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Bottom Live Telemetry Readout Bar (100% True Specs from Resume) -->
+          <div class="visualizer-telemetry-footer">
+            <div class="telem-item">
+              <span class="telem-key">CAD &amp; PRINT</span>
+              <span class="telem-val" id="telemMat">FUSION 360 • 1.4–1.5 kg PLA</span>
+            </div>
+            <div class="telem-item">
+              <span class="telem-key">ANALOG PCB</span>
+              <span class="telem-val" id="telemTol">TL074 • 20–500 Hz BANDPASS</span>
+            </div>
+            <div class="telem-item">
+              <span class="telem-key">CONTROL</span>
+              <span class="telem-val" id="telemMcu">ARDUINO C • 10 GESTURES</span>
+            </div>
+            <div class="telem-item">
+              <span class="telem-key">RECOGNITION</span>
+              <span class="telem-val" id="telemPwr">INR 1,00,000 TNSI WINNER</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SELECTED PROJECTS (All 10 Real Projects from Resume)
+         ========================================== -->
+    <section class="work-section section-container" id="work">
+      <div class="section-header-row">
+        <div>
+          <div class="eyebrow-badge">
+            <span class="eyebrow-dot"></span> VERIFIED ENGINEERING PORTFOLIO
+          </div>
+          <h2 class="section-title">Projects &amp; Hardware Systems</h2>
+        </div>
+
+        <!-- Filter Tabs by Track -->
+        <div class="filter-pills" role="tablist" aria-label="Filter projects by engineering track">
+          <button class="filter-btn active" data-filter="all" type="button">All Projects (9)</button>
+          <button class="filter-btn" data-filter="3d" type="button">3D Printing &amp; CAD</button>
+          <button class="filter-btn" data-filter="embedded" type="button">Embedded &amp; PCB [EMB]</button>
+          <button class="filter-btn" data-filter="robotics" type="button">Robotics &amp; Controls [ROB/CTRL]</button>
+          <button class="filter-btn" data-filter="iot" type="button">IoT &amp; Cloud [IOT]</button>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- 1. BCI-Controlled Bionic Arm -->
+        <article class="project-card" data-category="3d embedded robotics ai">
+          <div class="project-img-wrap bionic-card-img-wrap arm-card-img-wrap">
+            <img id="bionicCardImg" src="assets/bionic-arm-studio-open.jpg" alt="BCI-Controlled Bionic Arm for Upper Limb Amputees" class="project-img bionic-arm-contain-img" loading="lazy" />
+            <div class="project-domain-badges">
+              <span class="domain-pill pill-3d">Fusion 360 • PLA (1.4–1.5 kg)</span>
+              <span class="domain-pill pill-pcb">INR 1,00,000 TNSI Winner</span>
+            </div>
+            <!-- Interactive Gesture Toggle directly on the Bionic Arm Card -->
+            <div class="bionic-gesture-switcher" aria-label="Switch Bionic Arm Gesture Photo">
+              <button type="button" class="gesture-pill active" data-bionic-src="assets/bionic-arm-studio-open.jpg">
+                OLED: "Bionic Arm"
+              </button>
+              <button type="button" class="gesture-pill" data-bionic-src="assets/bionic-arm-studio-peace.jpg">
+                OLED: "Peace" ✌️
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span class="project-index">01 // EMB • ROB • AI</span>
+              <span class="project-tolerance">2022 • 7 CAD ITERATIONS</span>
+            </div>
+            <h3 class="project-title">BCI-Controlled Bionic Arm for Upper Limb Amputees</h3>
+            <p class="project-desc">
+              Built a mind-controlled prosthetic arm that moves only when the user's brain signal and a camera both confirm the target, winning the INR 1,00,000 TNSI 2022 national innovation prize (Government of Tamil Nadu).
+            </p>
+            <div class="dual-spec-box">
+              <div class="spec-half spec-3d">
+                <span class="spec-label">CAD &amp; 3D PRINT</span>
+                <strong>Fusion 360 • 7 Iterations PLA</strong>
+              </div>
+              <div class="spec-half spec-emb">
+                <span class="spec-label">EMBEDDED &amp; AI</span>
+                <strong>Arduino C • EEG/EMG • TensorFlow</strong>
+              </div>
+            </div>
+            <button class="btn-inspect-project" data-project-index="0" type="button">
+              View Full Project Details <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 2. Custom PCB: Dual-Stage Bio-Potential Amplifier -->
+        <article class="project-card" data-category="embedded">
+          <div class="project-img-wrap bionic-card-img-wrap">
+            <img id="neuralAmpCardImg" src="assets/project-neural-amp-front.png" alt="Femto 3D Neural Amp v0.1 Bio-Potential Amplifier PCB" class="project-img bionic-contain-img" loading="lazy" />
+            <div class="project-domain-badges">
+              <span class="domain-pill pill-pcb">Femto 3D • Neural Amp v0.1</span>
+              <span class="domain-pill pill-3d">TL074 Analog Front-End</span>
+            </div>
+            <!-- Interactive PCB View Switcher (Front Gold ENIG / Back TL074 IC) -->
+            <div class="bionic-gesture-switcher" aria-label="Switch PCB View">
+              <button type="button" class="gesture-pill active pcb-view-btn" data-pcb-src="assets/project-neural-amp-front.png">
+                Front (Gold ENIG)
+              </button>
+              <button type="button" class="gesture-pill pcb-view-btn" data-pcb-src="assets/project-neural-amp-ic.png">
+                Back (TL074 IC)
+              </button>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span class="project-index">02 // EMB • ANALOG PCB</span>
+              <span class="project-tolerance">20–500 Hz BANDPASS • 50/60 Hz NOTCH</span>
+            </div>
+            <h3 class="project-title">Custom PCB: Dual-Stage Bio-Potential Amplifier (Neural Amp v0.1)</h3>
+            <p class="project-desc">
+              Designed a custom bio-potential amplifier PCB in Autodesk Eagle (Femto 3D Neural Amp v0.1) using a TL074 low-noise op-amp that boosts µV to mV EMG/EEG signals with integrated 20 to 500 Hz active bandpass filtering and noise rejection for the BCI bionic arm.
+            </p>
+            <div class="dual-spec-box">
+              <div class="spec-half spec-3d">
+                <span class="spec-label">PCB HARDWARE</span>
+                <strong>Gold ENIG • Femto 3D v0.1</strong>
+              </div>
+              <div class="spec-half spec-emb">
+                <span class="spec-label">SIGNAL CHAIN</span>
+                <strong>TL074 • µV→mV EMG/EEG</strong>
+              </div>
+            </div>
+            <button class="btn-inspect-project" data-project-index="1" type="button">
+              View Full Project Details <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 3. Quadruped Surveillance Robot -->
+        <article class="project-card" data-category="3d robotics embedded">
+          <div class="project-img-wrap bionic-card-img-wrap">
+            <img src="assets/project-quadruped-robot.png" alt="3D-Printed Quadruped Walking Robot with Ultrasonic & Servos" class="project-img bionic-contain-img" loading="lazy" />
+            <div class="project-domain-badges">
+              <span class="domain-pill pill-3d">3D-Printed Chassis &amp; Legs</span>
+              <span class="domain-pill pill-pcb">Servo Gait • Ultrasonic Eyes</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span class="project-index">03 // ROB • EMB • 3D</span>
+              <span class="project-tolerance">SERVO DRIVEN • HC-SR04 AVOIDANCE</span>
+            </div>
+            <h3 class="project-title">Quadruped Walking Robot (Custom 3D Chassis)</h3>
+            <p class="project-desc">
+              Designed and fabricated a 4-legged walking robot with a 3D-printed modular chassis and leg linkages, multi-servo coordinated articulation, front HC-SR04 ultrasonic sensor navigation, and onboard LiPo battery integration.
+            </p>
+            </p>
+            <div class="dual-spec-box">
+              <div class="spec-half spec-3d">
+                <span class="spec-label">MECHANICAL</span>
+                <strong>Fusion 360 Printed Chassis</strong>
+              </div>
+              <div class="spec-half spec-emb">
+                <span class="spec-label">EMBEDDED</span>
+                <strong>Embedded C • Arduino Mega</strong>
+              </div>
+            </div>
+            <button class="btn-inspect-project" data-project-index="2" type="button">
+              View Full Project Details <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 4. Surveillance Quadrotor (AIRC Lab, University of Windsor) -->
+        <article class="project-card" data-category="robotics embedded">
+          <div class="project-img-wrap bionic-card-img-wrap">
+            <img src="assets/project-surveillance-quadrotor.png" alt="Surveillance Quadrotor built at AIRC Lab with RadioLink Transmitter" class="project-img bionic-contain-img" loading="lazy" />
+            <div class="project-domain-badges">
+              <span class="domain-pill pill-pcb">Pixhawk • ArduPilot</span>
+              <span class="domain-pill pill-3d">RadioLink T8FB • 1 km</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span class="project-index">04 // ROB • CTRL • EMB</span>
+              <span class="project-tolerance">2025 • AIRC LAB UWINDSOR</span>
+            </div>
+            <h3 class="project-title">Surveillance Quadrotor (AIRC Lab, UWindsor)</h3>
+            <p class="project-desc">
+              Built a camera-equipped surveillance quadrotor on a Pixhawk 2.4.8 PRO running ArduPilot, with GPS mapping, a live video feed, geofencing, and a return-to-home fail-safe, verified in flight out to a 1 km range.
+            </p>
+            <div class="dual-spec-box">
+              <div class="spec-half spec-3d">
+                <span class="spec-label">FLIGHT CONTROLLER</span>
+                <strong>Pixhawk 2.4.8 PRO • GPS</strong>
+              </div>
+              <div class="spec-half spec-emb">
+                <span class="spec-label">AUTONOMY</span>
+                <strong>ArduPilot • Geofencing • RTH</strong>
+              </div>
+            </div>
+            <button class="btn-inspect-project" data-project-index="3" type="button">
+              View Full Project Details <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 5. Real-Time LQG Lane-Change Controller (MEng Capstone) -->
+        <article class="project-card" data-category="robotics">
+          <div class="project-img-wrap bionic-card-img-wrap">
+            <img src="assets/project-lqg-controller.png" alt="Real-Time LQG Lane-Change Controller MATLAB and Kalman Simulation" class="project-img bionic-contain-img" loading="lazy" />
+            <div class="project-domain-badges">
+              <span class="domain-pill pill-pcb">100 Hz LQG + Kalman Filter</span>
+              <span class="domain-pill pill-3d">Up to 59% Lower RMSE</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span class="project-index">05 // CTRL • ROB (MEng CAPSTONE)</span>
+              <span class="project-tolerance">2026 • 200-RUN MONTE CARLO</span>
+            </div>
+            <h3 class="project-title">Real-Time LQG Lane-Change Controller</h3>
+            <p class="project-desc">
+              Designed a 100 Hz LQG lateral controller (LQR + discrete Kalman filter) on a 4-state bicycle model tracking a 3.5 m lane change. Validated across 200-run Monte Carlo trials at 40, 80, and 120 km/h, cutting RMSE by up to 59% on a nonlinear Pacejka tyre plant.
+            </p>
+            <div class="dual-spec-box">
+              <div class="spec-half spec-3d">
+                <span class="spec-label">STATE ESTIMATION</span>
+                <strong>ZOH Joseph-Form Kalman</strong>
+              </div>
+              <div class="spec-half spec-emb">
+                <span class="spec-label">VALIDATION</span>
+                <strong>MATLAB • RK4 • Pacejka Model</strong>
+              </div>
+            </div>
+            <button class="btn-inspect-project" data-project-index="4" type="button">
+              View Full Project Details <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 6. Home & Plant Health Monitoring Platform -->
+        <article class="project-card" data-category="iot embedded">
+          <div class="project-img-wrap">
+            <img src="assets/project-esp32-iot.jpg" onerror="this.onerror=null; this.src='assets/project-iot-sensor.jpg';" alt="ESP32 Home and Plant Health Monitoring IoT Platform" class="project-img" loading="lazy" />
+            <div class="project-domain-badges">
+              <span class="domain-pill pill-pcb">ESP32 • 1,440 Readings/Day</span>
+              <span class="domain-pill pill-3d">Oracle Cloud ARM • nginx</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span class="project-index">06 // IOT • EMB</span>
+              <span class="project-tolerance">2+ MONTHS CONTINUOUS • $0 COST</span>
+            </div>
+            <h3 class="project-title">Home &amp; Plant Health Monitoring Platform</h3>
+            <p class="project-desc">
+              Full-stack IoT platform where ESP32 nodes stream DHT11, BH1750 light, and 4-channel soil-moisture data to a self-hosted Node.js API and SQLite database behind nginx on an Oracle Cloud ARM VM.
+            </p>
+            <div class="dual-spec-box">
+              <div class="spec-half spec-3d">
+                <span class="spec-label">SENSORS &amp; EDGE</span>
+                <strong>ESP32 • DHT11 • BH1750 • 4× Soil</strong>
+              </div>
+              <div class="spec-half spec-emb">
+                <span class="spec-label">CLOUD STACK</span>
+                <strong>Node.js • SQLite • nginx • OCI</strong>
+              </div>
+            </div>
+            <button class="btn-inspect-project" data-project-index="5" type="button">
+              View Full Project Details <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 7. Campus IoT Automation System -->
+        <article class="project-card" data-category="iot embedded">
+          <div class="project-img-wrap bionic-card-img-wrap">
+            <img src="assets/project-campus-iot-box.png" alt="Campus IoT Automation System with 3D-Printed Translucent Enclosure" class="project-img bionic-contain-img" loading="lazy" />
+            <div class="project-domain-badges">
+              <span class="domain-pill pill-3d">3D Enclosure • SRM TRPEC</span>
+              <span class="domain-pill pill-pcb">ESP32 / ESP8266 • MQTT</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span class="project-index">07 // IOT • EMB</span>
+              <span class="project-tolerance">~20 AUTOMATED SWITCHES &amp; DEVICES</span>
+            </div>
+            <h3 class="project-title">Campus IoT Automation System</h3>
+            <p class="project-desc">
+              Automated ~20 switches and devices for the university using an MQTT network of ESP32/ESP8266 nodes inside 3D-printed switchgear enclosures and a Raspberry Pi gateway, with threshold control and OTA updates.
+            </p>
+            <div class="dual-spec-box">
+              <div class="spec-half spec-3d">
+                <span class="spec-label">ENCLOSURE</span>
+                <strong>3D-Printed • Toggle Switches</strong>
+              </div>
+              <div class="spec-half spec-emb">
+                <span class="spec-label">NETWORK</span>
+                <strong>MQTT • ESP32 / ESP8266 • OTA</strong>
+              </div>
+            </div>
+            <button class="btn-inspect-project" data-project-index="6" type="button">
+              View Full Project Details <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 8. ShredStock: Production Inventory System (Galati Cheese) -->
+        <article class="project-card" data-category="ai iot">
+          <div class="project-img-wrap bionic-card-img-wrap">
+            <img src="assets/project-shredstock-display.png" alt="ShredStock Production Dashboard on Monitor" class="project-img bionic-contain-img" loading="lazy" />
+            <div class="project-domain-badges">
+              <span class="domain-pill pill-pcb">Galati Cheese Company</span>
+              <span class="domain-pill pill-3d">Zero Stock-Outs</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span class="project-index">08 // MFG • FULL-STACK</span>
+              <span class="project-tolerance">GALATI CHEESE COMPANY • PRODUCTION</span>
+            </div>
+            <h3 class="project-title">ShredStock — Manufacturing Inventory Platform</h3>
+            <p class="project-desc">
+              Built ShredStock (React, TypeScript, Node/Express, Prisma/SQLite, JWT role-based access, Oracle Cloud) after a box shortage stopped production; its live dashboard and alerts have delivered zero stock-outs since launch.
+            </p>
+            <div class="dual-spec-box">
+              <div class="spec-half spec-3d">
+                <span class="spec-label">IMPACT</span>
+                <strong>Zero Material Stock-Outs</strong>
+              </div>
+              <div class="spec-half spec-emb">
+                <span class="spec-label">STACK</span>
+                <strong>React • TS • Prisma/SQLite • OCI</strong>
+              </div>
+            </div>
+            <button class="btn-inspect-project" data-project-index="7" type="button">
+              View Full Project Details <span>→</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- 9. Intruder Alert & Surveillance System -->
+        <article class="project-card" data-category="iot embedded">
+          <div class="project-img-wrap bionic-card-img-wrap">
+            <img src="assets/project-intruder-alert.png" alt="ESP32-CAM and PIR Motion Intruder Alert Hardware" class="project-img bionic-contain-img" loading="lazy" />
+            <div class="project-domain-badges">
+              <span class="domain-pill pill-3d">3D-Printed Housing</span>
+              <span class="domain-pill pill-pcb">ESP32-CAM • PIR • Antenna</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <span class="project-index">09 // IOT • SECURITY</span>
+              <span class="project-tolerance">LIVE LOCAL FEED • DETECTION ZONES</span>
+            </div>
+            <h3 class="project-title">Intruder Alert &amp; Surveillance System</h3>
+            <p class="project-desc">
+              Built an ESP32-CAM and Raspberry Pi security system that captures a photo on PIR motion and emails it automatically via SMTP, featuring a live local video feed, configurable detection zones, and scheduled alert suppression.
+            </p>
+            <div class="dual-spec-box">
+              <div class="spec-half spec-3d">
+                <span class="spec-label">HARDWARE</span>
+                <strong>ESP32-CAM • RPi • PIR Sensor</strong>
+              </div>
+              <div class="spec-half spec-emb">
+                <span class="spec-label">SOFTWARE</span>
+                <strong>Python • SMTP • Zone Masking</strong>
+              </div>
+            </div>
+            <button class="btn-inspect-project" data-project-index="8" type="button">
+              View Full Project Details <span>→</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         VERIFIED WORK EXPERIENCE TIMELINE
+         ========================================== -->
+    <section class="experience-section section-container" id="experience">
+      <div class="section-header">
+        <div class="eyebrow-badge">
+          <span class="eyebrow-dot"></span> PROFESSIONAL TRACK RECORD
+        </div>
+        <h2 class="section-title">Work Experience &amp; Engineering Leadership</h2>
+        <p class="section-subtitle">
+          From founding <strong>Femto 3D</strong> and delivering <strong>200+ hardware prototypes</strong> to supervising industrial production lines in Windsor and managing <strong>99.9%-uptime</strong> global databases at IDP Education.
+        </p>
+      </div>
+
+      <div class="timeline-list">
+        <!-- Femto 3D -->
+        <div class="timeline-card highlight-card">
+          <div class="timeline-meta">
+            <span class="timeline-date">Feb 2021 – Dec 2024</span>
+            <span class="timeline-location">Thanjavur, India • femto3d.com</span>
+            <div class="timeline-tags">
+              <span class="mono-tag">EMB</span>
+              <span class="mono-tag">ROB</span>
+              <span class="mono-tag">IOT</span>
+              <span class="mono-tag">3D PRINTING</span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h3>Founder &amp; Lead Engineer (Embedded Systems &amp; Product Prototyping)</h3>
+            <h4>Femto 3D (<a href="https://femto3d.com" target="_blank" rel="noopener noreferrer">femto3d.com</a>)</h4>
+            <ul class="timeline-bullets">
+              <li>Delivered <strong>200+ projects for 50+ clients</strong> end to end (requirements, Autodesk Fusion 360 CAD, FDM/SLA 3D printing, Embedded C/Python firmware, assembly, QA, and handoff), working with 2 freelancers.</li>
+              <li>Engineered several prototype iterations of gas-system components for <strong>KRT Transport</strong>, refining each version against field feedback.</li>
+              <li>Redesigned stronger replacement fan knobs for <strong>Meenakshi Hospital</strong> after aftermarket parts kept breaking, ending the repeat replacements.</li>
+              <li>Built automation prototypes combining servo motors, sensors, and embedded control on <strong>Arduino, ESP32, and Raspberry Pi</strong>, with <strong>MQTT cloud dashboards</strong> for remote monitoring.</li>
+              <li>Calibrated FDM and SLA printers for tight tolerances and verified parts against engineering drawings and <strong>GD&amp;T</strong> before delivery.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Galati Cheese Company -->
+        <div class="timeline-card">
+          <div class="timeline-meta">
+            <span class="timeline-date">Mar 2025 – Present</span>
+            <span class="timeline-location">Windsor, ON, Canada</span>
+            <div class="timeline-tags">
+              <span class="mono-tag">MFG</span>
+              <span class="mono-tag">LEAD</span>
+              <span class="mono-tag">AUTOMATION</span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h3>Shred Line Supervisor (Jul 2026 – Present) &amp; Process Control / Machine Operator (Mar 2025 – Jul 2026)</h3>
+            <h4>Galati Cheese Company</h4>
+            <ul class="timeline-bullets">
+              <li>Lead a 5-person shred line team producing <strong>6 to 7 tonnes of cheese a day</strong> on a 5-day single-shift schedule, with <strong>zero lost-time incidents</strong> since taking over the line.</li>
+              <li>Cut changeover time from ~60 minutes to 20–30 minutes (<strong>50%+ faster</strong>) across 3–4 weekly changeovers by standardizing setup steps and operator training.</li>
+              <li>Reduced unplanned downtime from bagger film tangling and uneven weights by <strong>80%+</strong> (from a stop every 1–2 hours to 1–2 stops a week) via fault logbooks and targeted preventive maintenance.</li>
+              <li>Built <strong>ShredStock</strong> (React, TypeScript, Node/Express, Prisma/SQLite, JWT, Oracle Cloud) after a box shortage stopped production; its low-stock alerts have delivered <strong>zero stock-outs</strong> since launch.</li>
+              <li>As Process Control &amp; Machine Operator across 5 machines (3 shredders, 2 packing lines), cut rejected/reworked bags by <strong>~70%</strong> (from 20–30 per tonne to 5–10) and restored first-level faults on sensors, motors, solenoid valves, and belts within 5–10 minutes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- IDP Education -->
+        <div class="timeline-card">
+          <div class="timeline-meta">
+            <span class="timeline-date">Jul 2023 – Nov 2024</span>
+            <span class="timeline-location">Chennai, India</span>
+            <div class="timeline-tags">
+              <span class="mono-tag">DATA</span>
+              <span class="mono-tag">ORACLE / MYSQL</span>
+              <span class="mono-tag">AWS RDS</span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h3>Junior Database Administrator (DBA)</h3>
+            <h4>IDP Education (Co-owner of the IELTS English Test)</h4>
+            <ul class="timeline-bullets">
+              <li>Maintained <strong>99.9% uptime</strong> on the Oracle and MySQL databases behind the global IELTS booking platform.</li>
+              <li>Optimized SQL and PL/SQL through execution-plan analysis, index tuning, and schema restructuring, cutting a key report query from <strong>~90 seconds to 10 seconds (~89% faster)</strong>.</li>
+              <li>Migrated <strong>250,000+ records</strong> from on-premise Oracle to <strong>Amazon RDS and Amazon Redshift</strong> as one of a 6-person team, owning database-side validation and overnight cutover with zero production impact and zero data loss.</li>
+              <li>Automated daily health checks and alerting with Linux shell scripts and cron, saving <strong>~10 hours a week</strong> of manual monitoring.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Marcellotech & SD Pro Solutions -->
+        <div class="timeline-card">
+          <div class="timeline-meta">
+            <span class="timeline-date">Jan 2022 – Jan 2023</span>
+            <span class="timeline-location">Tiruchirappalli, India</span>
+            <div class="timeline-tags">
+              <span class="mono-tag">EMB</span>
+              <span class="mono-tag">IOT</span>
+              <span class="mono-tag">AI / ML</span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h3>Tutor — Embedded Systems &amp; IoT Instructor (Marcellotech) &amp; Project Intern (SD Pro Solutions)</h3>
+            <h4>Marcellotech (Feb 2022 – Jan 2023) • SD Pro Solutions (Jan 2022)</h4>
+            <ul class="timeline-bullets">
+              <li>Taught an embedded curriculum (<strong>Embedded C/C++, AVR and ARM Cortex architecture, I2C/SPI/UART interfacing, ESP32/Arduino IoT, motor control</strong>) through hands-on firmware and hardware bring-up labs at Marcellotech.</li>
+              <li>Mentored <strong>40+ students in ~10 project teams of 4</strong>, bringing nearly every team to a working hardware project.</li>
+              <li>At SD Pro Solutions, built a <strong>YOLO-based lane detection model</strong> feeding steering control for a driver-assist demo, reaching <strong>~90% detection accuracy</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION, AWARDS & TECHNICAL SKILLS
+         ========================================== -->
+    <section class="about-section section-container" id="education">
+      <div class="about-bento">
+        <!-- Education & National Awards Card -->
+        <div class="bento-card bento-bio">
+          <div class="eyebrow-badge">
+            <span class="eyebrow-dot"></span> EDUCATION &amp; HONOURS
+          </div>
+          <h2 class="bento-title">Academic Excellence &amp; National Innovation Awards</h2>
+
+          <div class="edu-block">
+            <div class="edu-header">
+              <strong>Master of Engineering (MEng), Electrical &amp; Computer Engineering</strong>
+              <span class="mono-tag">GPA: 9.2 / 10</span>
+            </div>
+            <p class="edu-inst">University of Windsor, Windsor, ON • Jan 2025 – Jun 2026</p>
+            <p class="edu-notes">
+              Coursework: Control Systems Design, Advanced Embedded Systems, Digital Signal Processing, Advanced Energy Storage Systems, Engineering Management.<br/>
+              Capstone: Real-Time LQG Lane-Change Controller • AIRC Lab Volunteer: Pixhawk Surveillance Quadrotor (1 km range).
+            </p>
+          </div>
+
+          <div class="edu-block">
+            <div class="edu-header">
+              <strong>Bachelor of Engineering (BEng), Electronics &amp; Communication Engineering</strong>
+              <span class="mono-tag">CGPA: 8.7 / 10 (Distinction)</span>
+            </div>
+            <p class="edu-inst">SRM TRP Engineering College (Anna University), India • Jul 2019 – May 2023</p>
+            <p class="edu-notes">
+              First Class with Distinction • Capstone: BCI-Controlled Bionic Arm (Best Project; TNSI 2022 National Winner).
+            </p>
+          </div>
+
+          <div class="awards-box">
+            <h4>Honours, Awards &amp; Volunteering</h4>
+            <ul class="clean-award-list">
+              <li>🏆 <strong>Winner, TNSI Final 2022 (Government of Tamil Nadu)</strong> — INR 1,00,000 grant for BCI Bionic Arm</li>
+              <li>🥇 <strong>1st Place, Project Expo 2022</strong> — SRM TRP Engineering College (BCI Bionic Arm)</li>
+              <li>🥇 <strong>1st Place, CAD Modelling Competition</strong> — SRM TRP Engineering College</li>
+              <li>🥈 <strong>Runner-Up, IEEE Region 10 (Asia-Pacific)</strong> Undergraduate Project Video Contest 2021</li>
+              <li>🏅 <strong>Finalist, Smart India Hackathon 2020</strong></li>
+              <li>🤝 <strong>STEM Technical Volunteer (2021–2022)</strong> — Delivered 5+ hands-on Arduino, IoT &amp; 3D-printing workshops reaching 500+ students</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Complete Verified Technical Skills Card -->
+        <div class="bento-card bento-stack">
+          <div class="stack-column">
+            <div class="stack-col-header">
+              <span class="dot-orange"></span>
+              <h3>Fabrication, 3D Printing, Robotics &amp; Controls</h3>
+            </div>
+            <ul class="clean-skill-list">
+              <li><span>3D Printing &amp; CAD</span> <span class="mono-tag">FDM &amp; SLA • Fusion 360 • AutoCAD • GD&amp;T</span></li>
+              <li><span>Controls &amp; Estimation</span> <span class="mono-tag">Simulink • LQR/LQG • Kalman Filter • PID</span></li>
+              <li><span>Simulation &amp; Modelling</span> <span class="mono-tag">State-Space • ZOH • RK4 • Monte Carlo • Pacejka</span></li>
+              <li><span>Robotics &amp; Flight</span> <span class="mono-tag">Pixhawk 2.4.8 • ArduPilot • 12-DOF Legged Gait</span></li>
+              <li><span>Manufacturing &amp; QA</span> <span class="mono-tag">Multivac • Pneumatics • HACCP • GMP • LOTO</span></li>
+            </ul>
+          </div>
+
+          <div class="stack-divider"></div>
+
+          <div class="stack-column">
+            <div class="stack-col-header">
+              <span class="dot-emerald"></span>
+              <h3>Embedded Systems, PCB, IoT &amp; AI/ML</h3>
+            </div>
+            <ul class="clean-skill-list">
+              <li><span>Languages</span> <span class="mono-tag">Embedded C • C++ • Python • MATLAB • SQL • TS/JS</span></li>
+              <li><span>Platforms &amp; Sensors</span> <span class="mono-tag">ESP32 • ESP8266 • Arduino (Mega/328P) • RPi</span></li>
+              <li><span>Protocols &amp; Bus</span> <span class="mono-tag">UART • I2C • SPI • GPIO • PWM • ADC/DAC • MQTT • BLE</span></li>
+              <li><span>PCB &amp; Analog Design</span> <span class="mono-tag">Autodesk Eagle • TL074 Op-Amp • Active Filters • EEG/EMG</span></li>
+              <li><span>AI/ML, Cloud &amp; DB</span> <span class="mono-tag">TensorFlow • PyTorch • YOLO • XGBoost • Oracle • AWS RDS</span></li>
+            </ul>
+          </div>
+
+          <div class="stack-divider"></div>
+
+          <div class="cert-strip">
+            <span class="mono-label">CERTIFICATIONS (COURSERA)</span>
+            <p class="cert-items">
+              3D Model Creation with Autodesk Fusion 360 (Autodesk) • Oracle Database Foundations (LearnQuest) • Introduction to Git &amp; GitHub (Google) • Using Python to Interact with the OS (Google) • Troubleshooting &amp; Debugging Techniques (Google)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT / CONNECT SECTION (100% True Contact Info)
+         ========================================== -->
+    <section class="contact-section section-container" id="contact">
+      <div class="contact-card">
+        <div class="contact-left">
+          <div class="eyebrow-badge">
+            <span class="eyebrow-dot"></span> WINDSOR, ON • OPEN WORK PERMIT (CANADA)
+          </div>
+          <h2 class="contact-title">Let's build reliable hardware, embedded firmware, and intelligent systems.</h2>
+          <p class="contact-desc">
+            Available for Embedded Systems, Hardware Prototyping, Robotics/Controls, IoT, and Manufacturing Automation roles across Canada.
+          </p>
+
+          <div class="contact-direct-info">
+            <a href="mailto:mailtofazilfz@gmail.com" class="direct-chip">✉ mailtofazilfz@gmail.com</a>
+            <a href="tel:+14377074889" class="direct-chip">☎ +1 437 707 4889</a>
+            <a href="https://github.com/fazil-salam" target="_blank" rel="noopener noreferrer" class="direct-chip">⌘ github.com/fazil-salam</a>
+            <a href="https://femto3d.com" target="_blank" rel="noopener noreferrer" class="direct-chip">◈ femto3d.com</a>
+          </div>
+
+          <div class="contact-buttons">
+            <a href="https://www.linkedin.com/in/connectfazil" target="_blank" rel="noopener noreferrer" class="btn-primary-dark">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+              </svg>
+              Connect on LinkedIn (/in/connectfazil)
+            </a>
+            <a href="mailto:mailtofazilfz@gmail.com?subject=Engineering%20Opportunity%20%E2%80%94%20Abdul%20Fazil" class="btn-secondary-outline">
+              Email mailtofazilfz@gmail.com ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Quick Project / Role Ping Terminal -->
+        <div class="contact-right">
+          <form class="quick-ping-form" id="quickPingForm">
+            <div class="form-header">
+              <span class="mono-label">DIRECT MESSAGE COMPOSER</span>
+              <span class="status-pill">OPEN WORK PERMIT • CANADA</span>
+            </div>
+
+            <div class="form-group">
+              <label for="pingTopic">Select Track / Topic</label>
+              <div class="topic-chips" id="pingTopic">
+                <button type="button" class="topic-chip active" data-topic="Embedded Systems / Firmware Role">Embedded / Firmware</button>
+                <button type="button" class="topic-chip" data-topic="Robotics & Controls Engineering">Robotics &amp; Controls</button>
+                <button type="button" class="topic-chip" data-topic="Hardware Prototyping & 3D Printing">3D Prototyping</button>
+                <button type="button" class="topic-chip" data-topic="IoT / Full-Stack / Manufacturing">IoT &amp; Automation</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="pingMessage">Your Note for Abdul Fazil</label>
+              <textarea id="pingMessage" rows="3" placeholder="Hi Fazil, I reviewed your portfolio and would love to discuss an engineering opportunity..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-ping">
+              Copy Message &amp; Open LinkedIn ↗
+            </button>
+            <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>Abdul Fazil Abdul Salam</strong>
+        <span>Windsor, ON • +1 437 707 4889 • mailtofazilfz@gmail.com • English &amp; Tamil</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/connectfazil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/fazil-salam" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://femto3d.com" target="_blank" rel="noopener noreferrer">Femto 3D</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Blueprint Modal -->
+  <div class="blueprint-modal-backdrop" id="blueprintModal" aria-hidden="true">
+    <div class="blueprint-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-topbar">
+        <span class="mono-label" id="modalCode">PROJECT SPECIFICATION</span>
+        <button class="modal-close-btn" id="modalCloseBtn" type="button" aria-label="Close modal">✕</button>
+      </div>
+      <div class="modal-content-grid">
+        <div class="modal-img-col">
+          <img id="modalImg" src="assets/project-pcb-enclosure.jpg" alt="" class="modal-img" />
+        </div>
+        <div class="modal-details-col">
+          <h3 id="modalTitle">Project Title</h3>
+          <p id="modalSummary" class="modal-summary"></p>
+          <div class="modal-specs-split">
+            <div class="modal-spec-card spec-card-3d">
+              <h4>Hardware, CAD &amp; Architecture</h4>
+              <ul id="modal3dList"></ul>
+            </div>
+            <div class="modal-spec-card spec-card-emb">
+              <h4>Firmware, Software &amp; Verified Results</h4>
+              <ul id="modalEmbList"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3D Electromechanical Engine (Three.js UMD + Authentic Fusion 360 STL Geometry) -->
+  <script src="vendor/three/three.min.js"></script>
+  <script src="vendor/three/OrbitControls.js"></script>
+  <script src="assets/models/bionic-arm/bionic-arm-data.js"></script>
+  <script src="assets/models/bionic-arm/bionic-arm-viewer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
